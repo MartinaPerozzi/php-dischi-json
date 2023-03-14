@@ -35,10 +35,10 @@
             </header>
 
             <main>
-                <div class="flex flex-wrap w-2/3 mx-auto gap-4">
-                    <div class="bg-[#101f30] text-white m-3 w-52" v-for="disk in diskList">
+                <div class="flex flex-wrap w-2/3 mx-auto gap-4 justify-center">
+                    <div class="bg-[#101f30] text-white m-3 w-56 rounded" v-for="disk in diskList">
                         <div class="flex flex-col items-center justify-center text-center">
-                            <img :src="disk.poster" alt="Disk poster" class="w-36 pt-3">
+                            <img :src="disk.poster" alt="Disk poster" class="w-40 pt-3">
                             <div class="pt-3">
                                 <h3 class="text-sm px-3 h-10">{{disk.title}}</h3>
                                 <span class="text-sm font-extralight">{{disk.author }}</span>
