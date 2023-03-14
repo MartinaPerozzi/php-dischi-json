@@ -3,6 +3,8 @@ const app = Vue.createApp({
         return {
             apiUrl: "./getList.php",
             diskList: [],
+            singleDiskInfo: {},
+            showSingleDisk: false,
 
 
         }
@@ -14,7 +16,7 @@ const app = Vue.createApp({
                     console.log(response);
                     this.diskList = response.data;
                 })
-        }
+        },
 
     },
     created() {
