@@ -19,13 +19,28 @@
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <!-- MyJs -->
     <script src="./js/main.js" defer></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
 </head>
 
-<body>
+<body class="bg-[#1c2d3b]">
     <div id="app">
-        <div>
-            <h1>PROVA {{diskList}} </h1>
+        <div class="w-full">
+            <header class="bg-[#101f30] w-full p-2">
+                <div class="flex align-center p-3">
+                    <img src="./img/spotify.png" alt="logo spotify" class="w-16">
+                </div>
+            </header>
+
+            <main>
+
+
+            </main>
+
+
+            <h1 class="text-white">PROVA {{diskList}} </h1>
         </div>
 
     </div>
