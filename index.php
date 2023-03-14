@@ -18,14 +18,14 @@
     <!-- Axios -->
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <!-- MyJs -->
-    <script src="./main.js"></script>
+    <script src="./js/main.js" defer></script>
 
 </head>
 
 <body>
     <div id="app">
         <div>
-            <h1>PROVA </h1>
+            <h1>PROVA {{diskList}} </h1>
         </div>
 
     </div>

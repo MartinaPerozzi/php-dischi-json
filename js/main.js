@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-            apiUrl: "getList.php",
+            apiUrl: "./getList.php",
             diskList: [],
 
 
@@ -9,7 +9,7 @@ const app = Vue.createApp({
     },
     methods: {
         getData(url) {
-            axios.get(this.url)
+            axios.get(url)
                 .then(response => {
                     console.log(response);
                     this.diskList = response.data;
