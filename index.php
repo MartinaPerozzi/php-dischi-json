@@ -1,14 +1,3 @@
-<?php
-// Includo il file Json con i data dei dischi
-$data = file_get_contents(__DIR__ . "/data/data.json");
-// Lo trasformo in un array leggibile da PHP
-$data_decoded = json_decode($data);
-// Dico che sto passando un file Json che va letto come API
-header('Content-Type: application/json; charset=utf-8');
-// Stampo l'array ri-trasformato in contenuto Json
-echo json_encode($data_decoded);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,18 +14,19 @@ echo json_encode($data_decoded);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.min.js"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- MyJs -->
+    <script src="./main.js"></script>
 
 </head>
 
 <body>
     <div id="app">
-
-
-        <div class="Title-text">
-            <h1></h1>
+        <div>
+            <h1>PROVA </h1>
         </div>
-
 
     </div>
 
